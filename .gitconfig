@@ -1,0 +1,56 @@
+[core]
+	excludesfile = ~/.gitignore
+
+[init]
+	defaultBranch = main
+	
+[column]
+	ui = auto
+    
+[branch]
+	sort = -committerdate
+    
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+	
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+	
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+	
+[rerere]
+	enabled = true
+	autoupdate = true
+	
+[help]
+	autocorrect = prompt
+	
+[commit]
+	verbose = true
+	
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+
+[color]
+	ui = auto
+
+[color "branch"]
+	current = green bold
+	local   = green
+	remote  = magenta
+
+[color "status"]
+	added = red
+	changed = yellow blink
+	untracked = yellow reverse
+	deleted = magenta
